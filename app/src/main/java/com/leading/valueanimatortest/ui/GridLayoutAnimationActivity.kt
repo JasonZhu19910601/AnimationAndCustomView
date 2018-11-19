@@ -12,6 +12,7 @@ import kotlinx.android.synthetic.main.activity_grid_layout_animation.*
 /*
  * git hub 新添加内容
  * 添加时间
+ * 2018-11-19
  */
 class GridLayoutAnimationActivity : AppCompatActivity() {
     private lateinit var mGridAdapter: GridAdapter
