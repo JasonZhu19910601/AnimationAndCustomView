@@ -4,11 +4,10 @@ import android.animation.Keyframe
 import android.animation.ObjectAnimator
 import android.animation.PropertyValuesHolder
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.animation.AccelerateInterpolator
 import android.view.animation.BounceInterpolator
+import androidx.appcompat.app.AppCompatActivity
 import com.leading.valueanimatortest.R
-import com.leading.valueanimatortest.R.id.tv
 import com.leading.valueanimatortest.evaluator.CharEvaluator
 import kotlinx.android.synthetic.main.activity_main.*
 

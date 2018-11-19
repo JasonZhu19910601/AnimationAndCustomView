@@ -2,17 +2,13 @@ package com.leading.valueanimatortest.ui
 
 import android.animation.*
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.leading.valueanimatortest.R
 import kotlinx.android.synthetic.main.activity_xmlanimset.*
 
 class XMLAnimsetActivity : AppCompatActivity() {
     lateinit var animator: Animator
     lateinit var animatorSet: AnimatorSet
-
-    companion object {
-        val TAG = XMLAnimsetActivity::class.java.simpleName
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

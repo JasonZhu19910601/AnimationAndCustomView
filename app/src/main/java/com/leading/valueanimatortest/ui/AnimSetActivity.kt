@@ -4,10 +4,11 @@ import android.animation.Animator
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.BounceInterpolator
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.util.Preconditions.checkNotNull
 import com.leading.valueanimatortest.R
 import kotlinx.android.synthetic.main.activity_anim_set.*
 
@@ -30,7 +31,7 @@ class AnimSetActivity : AppCompatActivity() {
         };
 
         btn_cancel.setOnClickListener {
-            checkNotNull(animatorSet).cancel()
+            animatorSet.cancel()
         }
     }
 

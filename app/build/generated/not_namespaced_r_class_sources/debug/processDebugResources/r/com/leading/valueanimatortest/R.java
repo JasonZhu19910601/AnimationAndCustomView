@@ -21,6 +21,8 @@ public final class R {
     public static final int abc_slide_out_top=0x7f010009;
     public static final int abc_tooltip_enter=0x7f01000a;
     public static final int abc_tooltip_exit=0x7f01000b;
+    public static final int grid_animation=0x7f01000c;
+    public static final int slide_in_left=0x7f01000d;
   }
   public static final class animator {
     public static final int animator=0x7f020000;
@@ -1963,9 +1965,10 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
+     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
+     * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>standard</td><td>3</td><td></td></tr>
+     * <tr><td>standard</td><td>7</td><td></td></tr>
      * </table>
      */
     public static final int layout_optimizationLevel=0x7f0300ce;
@@ -3429,135 +3432,138 @@ public final class R {
     public static final int actions=0x7f080017;
     public static final int activity_chooser_view_content=0x7f080018;
     public static final int add=0x7f080019;
-    public static final int alertTitle=0x7f08001a;
-    public static final int all=0x7f08001b;
-    public static final int always=0x7f08001c;
-    public static final int async=0x7f08001d;
-    public static final int barrier=0x7f08001e;
-    public static final int beginning=0x7f08001f;
-    public static final int blocking=0x7f080020;
-    public static final int bottom=0x7f080021;
-    public static final int btn=0x7f080022;
-    public static final int btn_cancel=0x7f080023;
-    public static final int btn_cancel_anim=0x7f080024;
-    public static final int btn_start_anim=0x7f080025;
-    public static final int buttonPanel=0x7f080026;
-    public static final int center=0x7f080027;
-    public static final int center_horizontal=0x7f080028;
-    public static final int center_vertical=0x7f080029;
-    public static final int chains=0x7f08002a;
-    public static final int checkbox=0x7f08002b;
-    public static final int chronometer=0x7f08002c;
-    public static final int clip_horizontal=0x7f08002d;
-    public static final int clip_vertical=0x7f08002e;
-    public static final int collapseActionView=0x7f08002f;
-    public static final int content=0x7f080030;
-    public static final int contentPanel=0x7f080031;
-    public static final int custom=0x7f080032;
-    public static final int customPanel=0x7f080033;
-    public static final int decor_content_parent=0x7f080034;
-    public static final int default_activity_button=0x7f080035;
-    public static final int dimensions=0x7f080036;
-    public static final int direct=0x7f080037;
-    public static final int disableHome=0x7f080038;
-    public static final int edit_query=0x7f080039;
-    public static final int end=0x7f08003a;
-    public static final int expand_activities_button=0x7f08003b;
-    public static final int expanded_menu=0x7f08003c;
-    public static final int fill=0x7f08003d;
-    public static final int fill_horizontal=0x7f08003e;
-    public static final int fill_vertical=0x7f08003f;
-    public static final int forever=0x7f080040;
-    public static final int gone=0x7f080041;
-    public static final int group_divider=0x7f080042;
-    public static final int home=0x7f080043;
-    public static final int homeAsUp=0x7f080044;
-    public static final int icon=0x7f080045;
-    public static final int icon_group=0x7f080046;
-    public static final int ifRoom=0x7f080047;
-    public static final int image=0x7f080048;
-    public static final int info=0x7f080049;
-    public static final int invisible=0x7f08004a;
-    public static final int italic=0x7f08004b;
-    public static final int left=0x7f08004c;
-    public static final int line1=0x7f08004d;
-    public static final int line3=0x7f08004e;
-    public static final int listMode=0x7f08004f;
-    public static final int list_item=0x7f080050;
-    public static final int message=0x7f080051;
-    public static final int middle=0x7f080052;
-    public static final int multiply=0x7f080053;
-    public static final int never=0x7f080054;
-    public static final int none=0x7f080055;
-    public static final int normal=0x7f080056;
-    public static final int notification_background=0x7f080057;
-    public static final int notification_main_column=0x7f080058;
-    public static final int notification_main_column_container=0x7f080059;
-    public static final int packed=0x7f08005a;
-    public static final int parent=0x7f08005b;
-    public static final int parentPanel=0x7f08005c;
-    public static final int percent=0x7f08005d;
-    public static final int pointview=0x7f08005e;
-    public static final int progress_circular=0x7f08005f;
-    public static final int progress_horizontal=0x7f080060;
-    public static final int radio=0x7f080061;
-    public static final int right=0x7f080062;
-    public static final int right_icon=0x7f080063;
-    public static final int right_side=0x7f080064;
-    public static final int screen=0x7f080065;
-    public static final int scrollIndicatorDown=0x7f080066;
-    public static final int scrollIndicatorUp=0x7f080067;
-    public static final int scrollView=0x7f080068;
-    public static final int search_badge=0x7f080069;
-    public static final int search_bar=0x7f08006a;
-    public static final int search_button=0x7f08006b;
-    public static final int search_close_btn=0x7f08006c;
-    public static final int search_edit_frame=0x7f08006d;
-    public static final int search_go_btn=0x7f08006e;
-    public static final int search_mag_icon=0x7f08006f;
-    public static final int search_plate=0x7f080070;
-    public static final int search_src_text=0x7f080071;
-    public static final int search_voice_btn=0x7f080072;
-    public static final int select_dialog_listview=0x7f080073;
-    public static final int shortcut=0x7f080074;
-    public static final int showCustom=0x7f080075;
-    public static final int showHome=0x7f080076;
-    public static final int showTitle=0x7f080077;
-    public static final int spacer=0x7f080078;
-    public static final int split_action_bar=0x7f080079;
-    public static final int spread=0x7f08007a;
-    public static final int spread_inside=0x7f08007b;
-    public static final int src_atop=0x7f08007c;
-    public static final int src_in=0x7f08007d;
-    public static final int src_over=0x7f08007e;
-    public static final int standard=0x7f08007f;
-    public static final int start=0x7f080080;
-    public static final int submenuarrow=0x7f080081;
-    public static final int submit_area=0x7f080082;
-    public static final int tabMode=0x7f080083;
-    public static final int tag_transition_group=0x7f080084;
-    public static final int tag_unhandled_key_event_manager=0x7f080085;
-    public static final int tag_unhandled_key_listeners=0x7f080086;
-    public static final int text=0x7f080087;
-    public static final int text2=0x7f080088;
-    public static final int textSpacerNoButtons=0x7f080089;
-    public static final int textSpacerNoTitle=0x7f08008a;
-    public static final int time=0x7f08008b;
-    public static final int title=0x7f08008c;
-    public static final int titleDividerNoCustom=0x7f08008d;
-    public static final int title_template=0x7f08008e;
-    public static final int top=0x7f08008f;
-    public static final int topPanel=0x7f080090;
-    public static final int tv=0x7f080091;
-    public static final int tv1=0x7f080092;
-    public static final int tv_1=0x7f080093;
-    public static final int tv_2=0x7f080094;
-    public static final int uniform=0x7f080095;
-    public static final int up=0x7f080096;
-    public static final int useLogo=0x7f080097;
-    public static final int withText=0x7f080098;
-    public static final int wrap=0x7f080099;
-    public static final int wrap_content=0x7f08009a;
+    public static final int add_data=0x7f08001a;
+    public static final int alertTitle=0x7f08001b;
+    public static final int all=0x7f08001c;
+    public static final int always=0x7f08001d;
+    public static final int async=0x7f08001e;
+    public static final int barrier=0x7f08001f;
+    public static final int beginning=0x7f080020;
+    public static final int blocking=0x7f080021;
+    public static final int bottom=0x7f080022;
+    public static final int btn=0x7f080023;
+    public static final int btn_cancel=0x7f080024;
+    public static final int btn_cancel_anim=0x7f080025;
+    public static final int btn_start_anim=0x7f080026;
+    public static final int buttonPanel=0x7f080027;
+    public static final int center=0x7f080028;
+    public static final int center_horizontal=0x7f080029;
+    public static final int center_vertical=0x7f08002a;
+    public static final int chains=0x7f08002b;
+    public static final int checkbox=0x7f08002c;
+    public static final int chronometer=0x7f08002d;
+    public static final int clip_horizontal=0x7f08002e;
+    public static final int clip_vertical=0x7f08002f;
+    public static final int collapseActionView=0x7f080030;
+    public static final int content=0x7f080031;
+    public static final int contentPanel=0x7f080032;
+    public static final int custom=0x7f080033;
+    public static final int customPanel=0x7f080034;
+    public static final int decor_content_parent=0x7f080035;
+    public static final int default_activity_button=0x7f080036;
+    public static final int dimensions=0x7f080037;
+    public static final int direct=0x7f080038;
+    public static final int disableHome=0x7f080039;
+    public static final int edit_query=0x7f08003a;
+    public static final int end=0x7f08003b;
+    public static final int expand_activities_button=0x7f08003c;
+    public static final int expanded_menu=0x7f08003d;
+    public static final int fill=0x7f08003e;
+    public static final int fill_horizontal=0x7f08003f;
+    public static final int fill_vertical=0x7f080040;
+    public static final int forever=0x7f080041;
+    public static final int gone=0x7f080042;
+    public static final int grid=0x7f080043;
+    public static final int group_divider=0x7f080044;
+    public static final int groups=0x7f080045;
+    public static final int home=0x7f080046;
+    public static final int homeAsUp=0x7f080047;
+    public static final int icon=0x7f080048;
+    public static final int icon_group=0x7f080049;
+    public static final int ifRoom=0x7f08004a;
+    public static final int image=0x7f08004b;
+    public static final int info=0x7f08004c;
+    public static final int invisible=0x7f08004d;
+    public static final int italic=0x7f08004e;
+    public static final int left=0x7f08004f;
+    public static final int line1=0x7f080050;
+    public static final int line3=0x7f080051;
+    public static final int listMode=0x7f080052;
+    public static final int list_item=0x7f080053;
+    public static final int message=0x7f080054;
+    public static final int middle=0x7f080055;
+    public static final int multiply=0x7f080056;
+    public static final int never=0x7f080057;
+    public static final int none=0x7f080058;
+    public static final int normal=0x7f080059;
+    public static final int notification_background=0x7f08005a;
+    public static final int notification_main_column=0x7f08005b;
+    public static final int notification_main_column_container=0x7f08005c;
+    public static final int packed=0x7f08005d;
+    public static final int parent=0x7f08005e;
+    public static final int parentPanel=0x7f08005f;
+    public static final int percent=0x7f080060;
+    public static final int pointview=0x7f080061;
+    public static final int progress_circular=0x7f080062;
+    public static final int progress_horizontal=0x7f080063;
+    public static final int radio=0x7f080064;
+    public static final int right=0x7f080065;
+    public static final int right_icon=0x7f080066;
+    public static final int right_side=0x7f080067;
+    public static final int screen=0x7f080068;
+    public static final int scrollIndicatorDown=0x7f080069;
+    public static final int scrollIndicatorUp=0x7f08006a;
+    public static final int scrollView=0x7f08006b;
+    public static final int search_badge=0x7f08006c;
+    public static final int search_bar=0x7f08006d;
+    public static final int search_button=0x7f08006e;
+    public static final int search_close_btn=0x7f08006f;
+    public static final int search_edit_frame=0x7f080070;
+    public static final int search_go_btn=0x7f080071;
+    public static final int search_mag_icon=0x7f080072;
+    public static final int search_plate=0x7f080073;
+    public static final int search_src_text=0x7f080074;
+    public static final int search_voice_btn=0x7f080075;
+    public static final int select_dialog_listview=0x7f080076;
+    public static final int shortcut=0x7f080077;
+    public static final int showCustom=0x7f080078;
+    public static final int showHome=0x7f080079;
+    public static final int showTitle=0x7f08007a;
+    public static final int spacer=0x7f08007b;
+    public static final int split_action_bar=0x7f08007c;
+    public static final int spread=0x7f08007d;
+    public static final int spread_inside=0x7f08007e;
+    public static final int src_atop=0x7f08007f;
+    public static final int src_in=0x7f080080;
+    public static final int src_over=0x7f080081;
+    public static final int standard=0x7f080082;
+    public static final int start=0x7f080083;
+    public static final int submenuarrow=0x7f080084;
+    public static final int submit_area=0x7f080085;
+    public static final int tabMode=0x7f080086;
+    public static final int tag_transition_group=0x7f080087;
+    public static final int tag_unhandled_key_event_manager=0x7f080088;
+    public static final int tag_unhandled_key_listeners=0x7f080089;
+    public static final int text=0x7f08008a;
+    public static final int text2=0x7f08008b;
+    public static final int textSpacerNoButtons=0x7f08008c;
+    public static final int textSpacerNoTitle=0x7f08008d;
+    public static final int time=0x7f08008e;
+    public static final int title=0x7f08008f;
+    public static final int titleDividerNoCustom=0x7f080090;
+    public static final int title_template=0x7f080091;
+    public static final int top=0x7f080092;
+    public static final int topPanel=0x7f080093;
+    public static final int tv=0x7f080094;
+    public static final int tv1=0x7f080095;
+    public static final int tv_1=0x7f080096;
+    public static final int tv_2=0x7f080097;
+    public static final int uniform=0x7f080098;
+    public static final int up=0x7f080099;
+    public static final int useLogo=0x7f08009a;
+    public static final int withText=0x7f08009b;
+    public static final int wrap=0x7f08009c;
+    public static final int wrap_content=0x7f08009d;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
@@ -3598,18 +3604,19 @@ public final class R {
     public static final int activity_anim=0x7f0a001c;
     public static final int activity_anim_set=0x7f0a001d;
     public static final int activity_custom_menu=0x7f0a001e;
-    public static final int activity_main=0x7f0a001f;
-    public static final int activity_xmlanimset=0x7f0a0020;
-    public static final int notification_action=0x7f0a0021;
-    public static final int notification_action_tombstone=0x7f0a0022;
-    public static final int notification_template_custom_big=0x7f0a0023;
-    public static final int notification_template_icon_group=0x7f0a0024;
-    public static final int notification_template_part_chronometer=0x7f0a0025;
-    public static final int notification_template_part_time=0x7f0a0026;
-    public static final int select_dialog_item_material=0x7f0a0027;
-    public static final int select_dialog_multichoice_material=0x7f0a0028;
-    public static final int select_dialog_singlechoice_material=0x7f0a0029;
-    public static final int support_simple_spinner_dropdown_item=0x7f0a002a;
+    public static final int activity_grid_layout_animation=0x7f0a001f;
+    public static final int activity_main=0x7f0a0020;
+    public static final int activity_xmlanimset=0x7f0a0021;
+    public static final int notification_action=0x7f0a0022;
+    public static final int notification_action_tombstone=0x7f0a0023;
+    public static final int notification_template_custom_big=0x7f0a0024;
+    public static final int notification_template_icon_group=0x7f0a0025;
+    public static final int notification_template_part_chronometer=0x7f0a0026;
+    public static final int notification_template_part_time=0x7f0a0027;
+    public static final int select_dialog_item_material=0x7f0a0028;
+    public static final int select_dialog_multichoice_material=0x7f0a0029;
+    public static final int select_dialog_singlechoice_material=0x7f0a002a;
+    public static final int support_simple_spinner_dropdown_item=0x7f0a002b;
   }
   public static final class mipmap {
     public static final int ic_launcher=0x7f0b0000;
@@ -8660,9 +8667,10 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
+     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
+     * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>standard</td><td>3</td><td></td></tr>
+     * <tr><td>standard</td><td>7</td><td></td></tr>
      * </table>
      *
      * @attr name com.leading.valueanimatortest:layout_optimizationLevel
@@ -8729,6 +8737,10 @@ public final class R {
      * <tr><td><code>{@link #ConstraintSet_android_layout_marginTop android:layout_marginTop}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_layout_marginRight android:layout_marginRight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_layout_marginBottom android:layout_marginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_maxWidth android:maxWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_maxHeight android:maxHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_minWidth android:minWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_android_minHeight android:minHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_alpha android:alpha}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_transformPivotX android:transformPivotX}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_transformPivotY android:transformPivotY}</code></td><td></td></tr>
@@ -8743,6 +8755,10 @@ public final class R {
      * <tr><td><code>{@link #ConstraintSet_android_layout_marginEnd android:layout_marginEnd}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_translationZ android:translationZ}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_elevation android:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_barrierAllowsGoneWidgets com.leading.valueanimatortest:barrierAllowsGoneWidgets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_barrierDirection com.leading.valueanimatortest:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_chainUseRtl com.leading.valueanimatortest:chainUseRtl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_constraint_referenced_ids com.leading.valueanimatortest:constraint_referenced_ids}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight com.leading.valueanimatortest:layout_constrainedHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth com.leading.valueanimatortest:layout_constrainedWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.leading.valueanimatortest:layout_constraintBaseline_creator}</code></td><td></td></tr>
@@ -8802,6 +8818,10 @@ public final class R {
      * @see #ConstraintSet_android_layout_marginTop
      * @see #ConstraintSet_android_layout_marginRight
      * @see #ConstraintSet_android_layout_marginBottom
+     * @see #ConstraintSet_android_maxWidth
+     * @see #ConstraintSet_android_maxHeight
+     * @see #ConstraintSet_android_minWidth
+     * @see #ConstraintSet_android_minHeight
      * @see #ConstraintSet_android_alpha
      * @see #ConstraintSet_android_transformPivotX
      * @see #ConstraintSet_android_transformPivotY
@@ -8816,6 +8836,10 @@ public final class R {
      * @see #ConstraintSet_android_layout_marginEnd
      * @see #ConstraintSet_android_translationZ
      * @see #ConstraintSet_android_elevation
+     * @see #ConstraintSet_barrierAllowsGoneWidgets
+     * @see #ConstraintSet_barrierDirection
+     * @see #ConstraintSet_chainUseRtl
+     * @see #ConstraintSet_constraint_referenced_ids
      * @see #ConstraintSet_layout_constrainedHeight
      * @see #ConstraintSet_layout_constrainedWidth
      * @see #ConstraintSet_layout_constraintBaseline_creator
@@ -8869,10 +8893,12 @@ public final class R {
     public static final int[] ConstraintSet={
       0x010100c4, 0x010100d0, 0x010100dc, 0x010100f4, 
       0x010100f5, 0x010100f7, 0x010100f8, 0x010100f9, 
-      0x010100fa, 0x0101031f, 0x01010320, 0x01010321, 
+      0x010100fa, 0x0101011f, 0x01010120, 0x0101013f, 
+      0x01010140, 0x0101031f, 0x01010320, 0x01010321, 
       0x01010322, 0x01010323, 0x01010324, 0x01010325, 
       0x01010326, 0x01010327, 0x01010328, 0x010103b5, 
-      0x010103b6, 0x010103fa, 0x01010440, 0x7f03009a, 
+      0x010103b6, 0x010103fa, 0x01010440, 0x7f030037, 
+      0x7f030038, 0x7f030046, 0x7f03005a, 0x7f03009a, 
       0x7f03009b, 0x7f03009c, 0x7f03009d, 0x7f03009e, 
       0x7f03009f, 0x7f0300a0, 0x7f0300a1, 0x7f0300a2, 
       0x7f0300a3, 0x7f0300a4, 0x7f0300a5, 0x7f0300a6, 
@@ -9032,6 +9058,58 @@ public final class R {
      */
     public static final int ConstraintSet_android_layout_marginBottom=8;
     /**
+     * <p>This symbol is the offset where the {@link android.R.attr#maxWidth}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:maxWidth
+     */
+    public static final int ConstraintSet_android_maxWidth=9;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#maxHeight}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:maxHeight
+     */
+    public static final int ConstraintSet_android_maxHeight=10;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#minWidth}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:minWidth
+     */
+    public static final int ConstraintSet_android_minWidth=11;
+    /**
+     * <p>This symbol is the offset where the {@link android.R.attr#minHeight}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a dimension value, which is a floating point number appended with a
+     * unit such as "<code>14.5sp</code>".
+     * Available units are: px (pixels), dp (density-independent pixels),
+     * sp (scaled pixels based on preferred font size), in (inches), and
+     * mm (millimeters).
+     *
+     * @attr name android:minHeight
+     */
+    public static final int ConstraintSet_android_minHeight=12;
+    /**
      * <p>This symbol is the offset where the {@link android.R.attr#alpha}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
@@ -9039,7 +9117,7 @@ public final class R {
      *
      * @attr name android:alpha
      */
-    public static final int ConstraintSet_android_alpha=9;
+    public static final int ConstraintSet_android_alpha=13;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#transformPivotX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9052,7 +9130,7 @@ public final class R {
      *
      * @attr name android:transformPivotX
      */
-    public static final int ConstraintSet_android_transformPivotX=10;
+    public static final int ConstraintSet_android_transformPivotX=14;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#transformPivotY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9065,7 +9143,7 @@ public final class R {
      *
      * @attr name android:transformPivotY
      */
-    public static final int ConstraintSet_android_transformPivotY=11;
+    public static final int ConstraintSet_android_transformPivotY=15;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#translationX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9078,7 +9156,7 @@ public final class R {
      *
      * @attr name android:translationX
      */
-    public static final int ConstraintSet_android_translationX=12;
+    public static final int ConstraintSet_android_translationX=16;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#translationY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9091,7 +9169,7 @@ public final class R {
      *
      * @attr name android:translationY
      */
-    public static final int ConstraintSet_android_translationY=13;
+    public static final int ConstraintSet_android_translationY=17;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#scaleX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9100,7 +9178,7 @@ public final class R {
      *
      * @attr name android:scaleX
      */
-    public static final int ConstraintSet_android_scaleX=14;
+    public static final int ConstraintSet_android_scaleX=18;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#scaleY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9109,7 +9187,7 @@ public final class R {
      *
      * @attr name android:scaleY
      */
-    public static final int ConstraintSet_android_scaleY=15;
+    public static final int ConstraintSet_android_scaleY=19;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#rotation}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9118,7 +9196,7 @@ public final class R {
      *
      * @attr name android:rotation
      */
-    public static final int ConstraintSet_android_rotation=16;
+    public static final int ConstraintSet_android_rotation=20;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#rotationX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9127,7 +9205,7 @@ public final class R {
      *
      * @attr name android:rotationX
      */
-    public static final int ConstraintSet_android_rotationX=17;
+    public static final int ConstraintSet_android_rotationX=21;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#rotationY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9136,7 +9214,7 @@ public final class R {
      *
      * @attr name android:rotationY
      */
-    public static final int ConstraintSet_android_rotationY=18;
+    public static final int ConstraintSet_android_rotationY=22;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout_marginStart}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9149,7 +9227,7 @@ public final class R {
      *
      * @attr name android:layout_marginStart
      */
-    public static final int ConstraintSet_android_layout_marginStart=19;
+    public static final int ConstraintSet_android_layout_marginStart=23;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout_marginEnd}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9162,7 +9240,7 @@ public final class R {
      *
      * @attr name android:layout_marginEnd
      */
-    public static final int ConstraintSet_android_layout_marginEnd=20;
+    public static final int ConstraintSet_android_layout_marginEnd=24;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#translationZ}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9175,7 +9253,7 @@ public final class R {
      *
      * @attr name android:translationZ
      */
-    public static final int ConstraintSet_android_translationZ=21;
+    public static final int ConstraintSet_android_translationZ=25;
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#elevation}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9188,7 +9266,58 @@ public final class R {
      *
      * @attr name android:elevation
      */
-    public static final int ConstraintSet_android_elevation=22;
+    public static final int ConstraintSet_android_elevation=26;
+    /**
+     * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#barrierAllowsGoneWidgets}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.leading.valueanimatortest:barrierAllowsGoneWidgets
+     */
+    public static final int ConstraintSet_barrierAllowsGoneWidgets=27;
+    /**
+     * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#barrierDirection}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>Must be one of the following constant values.</p>
+     * <table>
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <colgroup align="left" />
+     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+     * <tr><td>bottom</td><td>3</td><td></td></tr>
+     * <tr><td>end</td><td>6</td><td></td></tr>
+     * <tr><td>left</td><td>0</td><td></td></tr>
+     * <tr><td>right</td><td>1</td><td></td></tr>
+     * <tr><td>start</td><td>5</td><td></td></tr>
+     * <tr><td>top</td><td>2</td><td></td></tr>
+     * </table>
+     *
+     * @attr name com.leading.valueanimatortest:barrierDirection
+     */
+    public static final int ConstraintSet_barrierDirection=28;
+    /**
+     * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#chainUseRtl}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a boolean value, such as "<code>true</code>" or
+     * "<code>false</code>".
+     *
+     * @attr name com.leading.valueanimatortest:chainUseRtl
+     */
+    public static final int ConstraintSet_chainUseRtl=29;
+    /**
+     * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#constraint_referenced_ids}
+     * attribute's value can be found in the {@link #ConstraintSet} array.
+     *
+     * <p>May be a string value, using '\\;' to escape characters such as
+     * '\\n' or '\\uxxxx' for a unicode character;
+     *
+     * @attr name com.leading.valueanimatortest:constraint_referenced_ids
+     */
+    public static final int ConstraintSet_constraint_referenced_ids=30;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9198,7 +9327,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constrainedHeight
      */
-    public static final int ConstraintSet_layout_constrainedHeight=23;
+    public static final int ConstraintSet_layout_constrainedHeight=31;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9208,7 +9337,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constrainedWidth
      */
-    public static final int ConstraintSet_layout_constrainedWidth=24;
+    public static final int ConstraintSet_layout_constrainedWidth=32;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9217,7 +9346,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintBaseline_creator
      */
-    public static final int ConstraintSet_layout_constraintBaseline_creator=25;
+    public static final int ConstraintSet_layout_constraintBaseline_creator=33;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9237,7 +9366,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintBaseline_toBaselineOf
      */
-    public static final int ConstraintSet_layout_constraintBaseline_toBaselineOf=26;
+    public static final int ConstraintSet_layout_constraintBaseline_toBaselineOf=34;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9246,7 +9375,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintBottom_creator
      */
-    public static final int ConstraintSet_layout_constraintBottom_creator=27;
+    public static final int ConstraintSet_layout_constraintBottom_creator=35;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9266,7 +9395,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintBottom_toBottomOf
      */
-    public static final int ConstraintSet_layout_constraintBottom_toBottomOf=28;
+    public static final int ConstraintSet_layout_constraintBottom_toBottomOf=36;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9286,7 +9415,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintBottom_toTopOf
      */
-    public static final int ConstraintSet_layout_constraintBottom_toTopOf=29;
+    public static final int ConstraintSet_layout_constraintBottom_toTopOf=37;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9298,7 +9427,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintCircle
      */
-    public static final int ConstraintSet_layout_constraintCircle=30;
+    public static final int ConstraintSet_layout_constraintCircle=38;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9307,7 +9436,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintCircleAngle
      */
-    public static final int ConstraintSet_layout_constraintCircleAngle=31;
+    public static final int ConstraintSet_layout_constraintCircleAngle=39;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9320,7 +9449,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintCircleRadius
      */
-    public static final int ConstraintSet_layout_constraintCircleRadius=32;
+    public static final int ConstraintSet_layout_constraintCircleRadius=40;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9330,7 +9459,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintDimensionRatio
      */
-    public static final int ConstraintSet_layout_constraintDimensionRatio=33;
+    public static final int ConstraintSet_layout_constraintDimensionRatio=41;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9350,7 +9479,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintEnd_toEndOf
      */
-    public static final int ConstraintSet_layout_constraintEnd_toEndOf=34;
+    public static final int ConstraintSet_layout_constraintEnd_toEndOf=42;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9370,7 +9499,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintEnd_toStartOf
      */
-    public static final int ConstraintSet_layout_constraintEnd_toStartOf=35;
+    public static final int ConstraintSet_layout_constraintEnd_toStartOf=43;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9383,7 +9512,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintGuide_begin
      */
-    public static final int ConstraintSet_layout_constraintGuide_begin=36;
+    public static final int ConstraintSet_layout_constraintGuide_begin=44;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9396,7 +9525,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintGuide_end
      */
-    public static final int ConstraintSet_layout_constraintGuide_end=37;
+    public static final int ConstraintSet_layout_constraintGuide_end=45;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9405,7 +9534,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintGuide_percent
      */
-    public static final int ConstraintSet_layout_constraintGuide_percent=38;
+    public static final int ConstraintSet_layout_constraintGuide_percent=46;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9423,7 +9552,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintHeight_default
      */
-    public static final int ConstraintSet_layout_constraintHeight_default=39;
+    public static final int ConstraintSet_layout_constraintHeight_default=47;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9444,7 +9573,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintHeight_max
      */
-    public static final int ConstraintSet_layout_constraintHeight_max=40;
+    public static final int ConstraintSet_layout_constraintHeight_max=48;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9465,7 +9594,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintHeight_min
      */
-    public static final int ConstraintSet_layout_constraintHeight_min=41;
+    public static final int ConstraintSet_layout_constraintHeight_min=49;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9474,7 +9603,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintHeight_percent
      */
-    public static final int ConstraintSet_layout_constraintHeight_percent=42;
+    public static final int ConstraintSet_layout_constraintHeight_percent=50;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9483,7 +9612,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintHorizontal_bias
      */
-    public static final int ConstraintSet_layout_constraintHorizontal_bias=43;
+    public static final int ConstraintSet_layout_constraintHorizontal_bias=51;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9501,7 +9630,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintHorizontal_chainStyle
      */
-    public static final int ConstraintSet_layout_constraintHorizontal_chainStyle=44;
+    public static final int ConstraintSet_layout_constraintHorizontal_chainStyle=52;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9510,7 +9639,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintHorizontal_weight
      */
-    public static final int ConstraintSet_layout_constraintHorizontal_weight=45;
+    public static final int ConstraintSet_layout_constraintHorizontal_weight=53;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9519,7 +9648,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintLeft_creator
      */
-    public static final int ConstraintSet_layout_constraintLeft_creator=46;
+    public static final int ConstraintSet_layout_constraintLeft_creator=54;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9539,7 +9668,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintLeft_toLeftOf
      */
-    public static final int ConstraintSet_layout_constraintLeft_toLeftOf=47;
+    public static final int ConstraintSet_layout_constraintLeft_toLeftOf=55;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9559,7 +9688,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintLeft_toRightOf
      */
-    public static final int ConstraintSet_layout_constraintLeft_toRightOf=48;
+    public static final int ConstraintSet_layout_constraintLeft_toRightOf=56;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9568,7 +9697,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintRight_creator
      */
-    public static final int ConstraintSet_layout_constraintRight_creator=49;
+    public static final int ConstraintSet_layout_constraintRight_creator=57;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9588,7 +9717,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintRight_toLeftOf
      */
-    public static final int ConstraintSet_layout_constraintRight_toLeftOf=50;
+    public static final int ConstraintSet_layout_constraintRight_toLeftOf=58;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9608,7 +9737,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintRight_toRightOf
      */
-    public static final int ConstraintSet_layout_constraintRight_toRightOf=51;
+    public static final int ConstraintSet_layout_constraintRight_toRightOf=59;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9628,7 +9757,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintStart_toEndOf
      */
-    public static final int ConstraintSet_layout_constraintStart_toEndOf=52;
+    public static final int ConstraintSet_layout_constraintStart_toEndOf=60;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9648,7 +9777,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintStart_toStartOf
      */
-    public static final int ConstraintSet_layout_constraintStart_toStartOf=53;
+    public static final int ConstraintSet_layout_constraintStart_toStartOf=61;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9657,7 +9786,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintTop_creator
      */
-    public static final int ConstraintSet_layout_constraintTop_creator=54;
+    public static final int ConstraintSet_layout_constraintTop_creator=62;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9677,7 +9806,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintTop_toBottomOf
      */
-    public static final int ConstraintSet_layout_constraintTop_toBottomOf=55;
+    public static final int ConstraintSet_layout_constraintTop_toBottomOf=63;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9697,7 +9826,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintTop_toTopOf
      */
-    public static final int ConstraintSet_layout_constraintTop_toTopOf=56;
+    public static final int ConstraintSet_layout_constraintTop_toTopOf=64;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9706,7 +9835,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintVertical_bias
      */
-    public static final int ConstraintSet_layout_constraintVertical_bias=57;
+    public static final int ConstraintSet_layout_constraintVertical_bias=65;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9724,7 +9853,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintVertical_chainStyle
      */
-    public static final int ConstraintSet_layout_constraintVertical_chainStyle=58;
+    public static final int ConstraintSet_layout_constraintVertical_chainStyle=66;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9733,7 +9862,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintVertical_weight
      */
-    public static final int ConstraintSet_layout_constraintVertical_weight=59;
+    public static final int ConstraintSet_layout_constraintVertical_weight=67;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9751,7 +9880,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintWidth_default
      */
-    public static final int ConstraintSet_layout_constraintWidth_default=60;
+    public static final int ConstraintSet_layout_constraintWidth_default=68;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9772,7 +9901,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintWidth_max
      */
-    public static final int ConstraintSet_layout_constraintWidth_max=61;
+    public static final int ConstraintSet_layout_constraintWidth_max=69;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9793,7 +9922,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintWidth_min
      */
-    public static final int ConstraintSet_layout_constraintWidth_min=62;
+    public static final int ConstraintSet_layout_constraintWidth_min=70;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9802,7 +9931,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_constraintWidth_percent
      */
-    public static final int ConstraintSet_layout_constraintWidth_percent=63;
+    public static final int ConstraintSet_layout_constraintWidth_percent=71;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9815,7 +9944,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_editor_absoluteX
      */
-    public static final int ConstraintSet_layout_editor_absoluteX=64;
+    public static final int ConstraintSet_layout_editor_absoluteX=72;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9828,7 +9957,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_editor_absoluteY
      */
-    public static final int ConstraintSet_layout_editor_absoluteY=65;
+    public static final int ConstraintSet_layout_editor_absoluteY=73;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9841,7 +9970,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_goneMarginBottom
      */
-    public static final int ConstraintSet_layout_goneMarginBottom=66;
+    public static final int ConstraintSet_layout_goneMarginBottom=74;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9854,7 +9983,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_goneMarginEnd
      */
-    public static final int ConstraintSet_layout_goneMarginEnd=67;
+    public static final int ConstraintSet_layout_goneMarginEnd=75;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9867,7 +9996,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_goneMarginLeft
      */
-    public static final int ConstraintSet_layout_goneMarginLeft=68;
+    public static final int ConstraintSet_layout_goneMarginLeft=76;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9880,7 +10009,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_goneMarginRight
      */
-    public static final int ConstraintSet_layout_goneMarginRight=69;
+    public static final int ConstraintSet_layout_goneMarginRight=77;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9893,7 +10022,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_goneMarginStart
      */
-    public static final int ConstraintSet_layout_goneMarginStart=70;
+    public static final int ConstraintSet_layout_goneMarginStart=78;
     /**
      * <p>This symbol is the offset where the {@link com.leading.valueanimatortest.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintSet} array.
@@ -9906,7 +10035,7 @@ public final class R {
      *
      * @attr name com.leading.valueanimatortest:layout_goneMarginTop
      */
-    public static final int ConstraintSet_layout_goneMarginTop=71;
+    public static final int ConstraintSet_layout_goneMarginTop=79;
     /**
      * Attributes that can be used with a CoordinatorLayout.
      * <p>Includes the following attributes:</p>

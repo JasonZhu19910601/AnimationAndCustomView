@@ -12,13 +12,23 @@
         <activity android:name=".ui.AnimActivity" />
         <activity android:name=".ui.AnimSetActivity" />
         <activity android:name=".ui.XMLAnimsetActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".ui.CustomMenuActivity" />
+        <activity android:name=".ui.GridLayoutAnimationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                `
             </intent-filter>
         </activity>
-        <activity android:name=".ui.CustomMenuActivity"></activity>
     </application>
 
 </manifest>

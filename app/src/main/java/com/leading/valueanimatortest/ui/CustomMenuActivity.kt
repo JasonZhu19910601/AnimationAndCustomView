@@ -1,7 +1,7 @@
 package com.leading.valueanimatortest.ui
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.leading.valueanimatortest.R
 
 class CustomMenuActivity : AppCompatActivity() {
