@@ -9,7 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.leading.valueanimatortest.R
 import kotlinx.android.synthetic.main.activity_grid_layout_animation.*
 
-
+/*
+ * git hub 新添加内容
+ */
 class GridLayoutAnimationActivity : AppCompatActivity() {
     private lateinit var mGridAdapter: GridAdapter
     private val mData = ArrayList<String>()
