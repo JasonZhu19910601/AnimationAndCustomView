@@ -30,7 +30,9 @@
             <!-- </intent-filter> -->
         </activity>
         <activity android:name="com.leading.valueanimatortest.ui.CustomMenuActivity" />
-        <activity android:name="com.leading.valueanimatortest.ui.GridLayoutAnimationActivity" >
+        <activity android:name="com.leading.valueanimatortest.ui.GridLayoutAnimationActivity" />
+        <activity android:name="com.leading.valueanimatortest.ui.AnimateLayoutChangesAndLayoutTransitionActivity" />
+        <activity android:name="com.leading.valueanimatortest.ui.ListViewItemAnimationActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

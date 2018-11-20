@@ -56,6 +56,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.2.aar\\ad4850fc5e46fdb5b8d77c228869fc03\\res\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_list_view_item_animation.xml.flat",
+        "source": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\src\\main\\res\\layout\\activity_list_view_item_animation.xml"
+    },
+    {
         "merged": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_top.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.2.aar\\ad4850fc5e46fdb5b8d77c228869fc03\\res\\anim\\abc_slide_out_top.xml"
     },
@@ -356,6 +360,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.2.aar\\ad4850fc5e46fdb5b8d77c228869fc03\\res\\color\\abc_tint_spinner.xml"
     },
     {
+        "merged": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\build\\intermediates\\res\\merged\\debug\\anim_top_in_anim.xml.flat",
+        "source": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\src\\main\\res\\anim\\top_in_anim.xml"
+    },
+    {
         "merged": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.2.aar\\ad4850fc5e46fdb5b8d77c228869fc03\\res\\layout\\abc_screen_simple.xml"
     },
@@ -466,6 +474,10 @@
     {
         "merged": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.2.aar\\ad4850fc5e46fdb5b8d77c228869fc03\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_animate_layout_changes_and_layout_transition.xml.flat",
+        "source": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\src\\main\\res\\layout\\activity_animate_layout_changes_and_layout_transition.xml"
     },
     {
         "merged": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -1052,6 +1064,10 @@
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.2.aar\\ad4850fc5e46fdb5b8d77c228869fc03\\res\\layout-v26\\abc_screen_toolbar.xml"
     },
     {
+        "merged": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_layout.xml.flat",
+        "source": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\src\\main\\res\\layout\\item_layout.xml"
+    },
+    {
         "merged": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.2.aar\\ad4850fc5e46fdb5b8d77c228869fc03\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_48dp.png"
     },
@@ -1306,6 +1322,10 @@
     {
         "merged": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_holo_dark.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.2.aar\\ad4850fc5e46fdb5b8d77c228869fc03\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\build\\intermediates\\res\\merged\\debug\\anim_bottom_in_anim.xml.flat",
+        "source": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\src\\main\\res\\anim\\bottom_in_anim.xml"
     },
     {
         "merged": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_switch_track.xml.flat",

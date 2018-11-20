@@ -11,8 +11,10 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+anim bottom_in_anim
 anim grid_animation
 anim slide_in_left
+anim top_in_anim
 animator animator
 animator color_object_animator
 animator object_animator
@@ -676,6 +678,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_btn
 id add_data
 id alertTitle
 id all
@@ -726,12 +729,15 @@ id icon
 id icon_group
 id ifRoom
 id image
+id img
 id info
 id invisible
 id italic
+id layoutTransitionGroup
 id left
 id line1
 id line3
+id list
 id listMode
 id list_item
 id message
@@ -751,6 +757,7 @@ id pointview
 id progress_circular
 id progress_horizontal
 id radio
+id remove_btn
 id right
 id right_icon
 id right_side
@@ -843,10 +850,13 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_anim
 layout activity_anim_set
+layout activity_animate_layout_changes_and_layout_transition
 layout activity_custom_menu
 layout activity_grid_layout_animation
+layout activity_list_view_item_animation
 layout activity_main
 layout activity_xmlanimset
+layout item_layout
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
