@@ -13,7 +13,8 @@ import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.leading.valueanimatortest.R
-import kotlinx.android.synthetic.main.activity_animate_layout_changes_and_layout_transition.*
+
+//import kotlinx.android.synthetic.main.activity_animate_layout_changes_and_layout_transition.*
 
 class AnimateLayoutChangesAndLayoutTransitionActivity : AppCompatActivity(), View.OnClickListener {
     val TAG = AnimateLayoutChangesAndLayoutTransitionActivity::class.simpleName
@@ -22,14 +23,14 @@ class AnimateLayoutChangesAndLayoutTransitionActivity : AppCompatActivity(), Vie
 
 
     override fun onClick(v: View) {
-        when (v.id) {
-            R.id.add_btn -> {
-                addBtnView()
-            }
-            R.id.remove_btn -> {
-                removeBtnView()
-            }
-        }
+//        when (v.id) {
+//            R.id.add_btn -> {
+//                addBtnView()
+//            }
+//            R.id.remove_btn -> {
+//                removeBtnView()
+//            }
+//        }
     }
 
     private fun addBtnView() {
@@ -38,12 +39,12 @@ class AnimateLayoutChangesAndLayoutTransitionActivity : AppCompatActivity(), Vie
         button.text = "btn$i"
         val layoutParams = LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
         button.layoutParams = layoutParams
-        layoutTransitionGroup.addView(button, 0)
+//        layoutTransitionGroup.addView(button, 0)
     }
 
     private fun removeBtnView() {
         if (i > 0) {
-            layoutTransitionGroup.removeViewAt(0)
+//            layoutTransitionGroup.removeViewAt(0)
             i--
         } else {
             Toast.makeText(this, "layoutTransitionGroup已经没有button了", Toast.LENGTH_SHORT).show()
@@ -54,9 +55,9 @@ class AnimateLayoutChangesAndLayoutTransitionActivity : AppCompatActivity(), Vie
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_animate_layout_changes_and_layout_transition)
-        add_btn.setOnClickListener(this)
-        remove_btn.setOnClickListener(this)
+//        setContentView(R.layout.activity_animate_layout_changes_and_layout_transition)
+//        add_btn.setOnClickListener(this)
+//        remove_btn.setOnClickListener(this)
 
         mLayoutTransition = LayoutTransition()
 
@@ -139,7 +140,7 @@ class AnimateLayoutChangesAndLayoutTransitionActivity : AppCompatActivity(), Vie
             }
 
         })
-        layoutTransitionGroup.layoutTransition = mLayoutTransition
+//        layoutTransitionGroup.layoutTransition = mLayoutTransition
     }
 
 

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+            "outputFile": "D:\\Android\\ASProjects\\AnimationAndCustomView\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.2.aar\\ad4850fc5e46fdb5b8d77c228869fc03\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\JasonZhu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.2.aar\\d777f6c33df867e5af30a8f4adddc3da\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

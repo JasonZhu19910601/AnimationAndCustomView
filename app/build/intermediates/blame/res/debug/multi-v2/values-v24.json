@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "D:\\Android\\ASProjects\\AnimationAndCustomView\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.2.aar\\ad4850fc5e46fdb5b8d77c228869fc03\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\JasonZhu\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.2.aar\\d777f6c33df867e5af30a8f4adddc3da\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
