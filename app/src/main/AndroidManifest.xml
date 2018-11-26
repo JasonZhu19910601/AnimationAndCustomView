@@ -22,13 +22,20 @@
         </activity>
         <activity android:name=".ui.CustomMenuActivity" />
         <activity android:name=".ui.GridLayoutAnimationActivity" />
-        <activity android:name=".ui.AnimateLayoutChangesAndLayoutTransitionActivity"></activity>
+        <activity android:name=".ui.AnimateLayoutChangesAndLayoutTransitionActivity" />
         <activity android:name=".ui.ListViewItemAnimationActivity">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--`-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".ui.PaintAndCanvasTest">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-                `
             </intent-filter>
         </activity>
     </application>

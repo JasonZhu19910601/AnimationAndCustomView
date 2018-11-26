@@ -678,7 +678,6 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id add_btn
 id add_data
 id alertTitle
 id all
@@ -733,7 +732,6 @@ id img
 id info
 id invisible
 id italic
-id layoutTransitionGroup
 id left
 id line1
 id line3
@@ -757,10 +755,10 @@ id pointview
 id progress_circular
 id progress_horizontal
 id radio
-id remove_btn
 id right
 id right_icon
 id right_side
+id root
 id screen
 id scrollIndicatorDown
 id scrollIndicatorUp
@@ -850,11 +848,11 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_anim
 layout activity_anim_set
-layout activity_animate_layout_changes_and_layout_transition
 layout activity_custom_menu
 layout activity_grid_layout_animation
 layout activity_list_view_item_animation
 layout activity_main
+layout activity_paint_and_canvas_test
 layout activity_xmlanimset
 layout item_layout
 layout notification_action
