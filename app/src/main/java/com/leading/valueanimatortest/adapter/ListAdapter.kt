@@ -61,6 +61,8 @@ class ListAdapter(drawableList: ArrayList<Drawable>, length: Int, context: Conte
 
     }
 
+    private var viewHolderCount = 0
+
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val holder: ViewHolder?
         var view: View? = convertView
@@ -69,6 +71,8 @@ class ListAdapter(drawableList: ArrayList<Drawable>, length: Int, context: Conte
             view = mLayoutInfater.inflate(R.layout.item_layout, null)
             holder.mImageView = view.img
             holder.mTextView = view.text
+            viewHolderCount++
+            Log.e("viewHolderCount--> ", "" + viewHolderCount)
             view.setTag(holder)
         } else {
             holder = view.tag as ViewHolder
