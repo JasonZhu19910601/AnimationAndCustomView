@@ -23,13 +23,13 @@ class MyRegionView : View {
     //set(Region region)：利用新的区域值来替换原来的区域
     //set(Rect r)：利用矩形所代表的区域替换原来的区域
     //set(int left, int top, int right, int bottom)：同样，根据矩形的两个点构造出矩形区域来替换原来的区域值
-    //setPath(Path path, Region clip)：根据路径的区域与某区域的交集，构造出新区域，这个后面具体讲解
+    //setPath(Path mPath, Region clip)：根据路径的区域与某区域的交集，构造出新区域，这个后面具体讲解
     // 举个小例子，来说明一个Set系列函数的替换概念：
     //
     //关于重写新建一个类，并派生自view，并且要重写OnDraw函数的问题我就不再讲了，有问题的同学，可以参考下《android Graphics（一）：概述及基本几何图形绘制》，当然最后我也会给出相关的源码，直接看源码也行。
     //
     //下面写了一个函数，先把Set函数注释起来，看看画出来的区域的位置，然后开启Set函数，然后再看画出来的区域
-    //注：里面有个函数drawRegion(Canvas canvas,Region rgn,Paint paint),只知道它可以画出指定的区域就可以了，具体里面是什么意思，后面我们再仔细讲。
+    //注：里面有个函数drawRegion(Canvas canvas,Region rgn,Paint mPaint),只知道它可以画出指定的区域就可以了，具体里面是什么意思，后面我们再仔细讲。
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         // 初始化画笔
@@ -108,7 +108,7 @@ class MyRegionView : View {
     public Rect getBounds()
     public boolean getBounds(Rect r)
     public Path getBoundaryPath()
-    public boolean getBoundaryPath(Path path)
+    public boolean getBoundaryPath(Path mPath)
 
 
     /**一系列的判断是否包含某点 和是否相交*/

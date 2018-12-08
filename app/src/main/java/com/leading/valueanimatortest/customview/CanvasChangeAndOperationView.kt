@@ -22,12 +22,12 @@ class CanvasChangeAndOperationView(context: Context) : View(context) {
         super.onDraw(canvas)
 
 //        // translate 平移，即改变坐标系位置
-//        val paint = Paint()
-//        paint.color = Color.GREEN
-//        paint.style = Paint.Style.FILL
+//        val mPaint = Paint()
+//        mPaint.color = Color.GREEN
+//        mPaint.style = Paint.Style.FILL
 //        canvas.translate(100f, 100f)
 //        val rect1 = Rect(0, 0, 400, 200)
-//        canvas.drawRect(rect1, paint)
+//        canvas.drawRect(rect1, mPaint)
 
         // 构造红绿两个颜色的画笔
         val greenPaint = generatePaint(Color.GREEN, Paint.Style.STROKE, 3f)
@@ -75,8 +75,8 @@ class CanvasChangeAndOperationView(context: Context) : View(context) {
 //        // 裁剪画布（clip系列函数）
 //        //裁剪画布是利用Clip系列函数，通过与Rect、Path、Region取交、并、差等集合运算来获得最新的画布形状。除了调用Save、Restore函数以外，这个操作是不可逆的，一但Canvas画布被裁剪，就不能再被恢复！
 //        //Clip系列函数如下：
-//        //boolean	clipPath(Path path)
-//        //boolean	clipPath(Path path, Region.Op op)
+//        //boolean	clipPath(Path mPath)
+//        //boolean	clipPath(Path mPath, Region.Op op)
 //        //boolean	clipRect(Rect rect, Region.Op op)
 //        //boolean	clipRect(RectF rect, Region.Op op)
 //        //boolean	clipRect(int left, int top, int right, int bottom)

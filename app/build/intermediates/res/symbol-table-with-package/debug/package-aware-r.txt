@@ -686,9 +686,11 @@ id always
 id async
 id barrier
 id beginning
+id bezierView
 id blocking
 id bottom
 id btn
+id btnReset
 id btn_cancel
 id btn_cancel_anim
 id btn_start_anim

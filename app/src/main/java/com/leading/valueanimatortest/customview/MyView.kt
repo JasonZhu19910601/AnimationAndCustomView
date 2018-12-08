@@ -18,34 +18,34 @@ class MyView : View {
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
 //        // 设置画笔基本属性
-//        val paint = Paint()
+//        val mPaint = Paint()
 //        // 抗锯齿
-//        paint.isAntiAlias = true
+//        mPaint.isAntiAlias = true
 //        // 设置画笔颜色
-//        paint.color = Color.RED
+//        mPaint.color = Color.RED
 //        // 设置填充样式
-//        paint.style = Paint.Style.STROKE
+//        mPaint.style = Paint.Style.STROKE
 //        // 设置画笔宽度
-//        paint.strokeWidth = 2f
+//        mPaint.strokeWidth = 2f
 //        // 设置阴影
-//        paint.setShadowLayer(10f, 15f, 15f, Color.GREEN)
+//        mPaint.setShadowLayer(10f, 15f, 15f, Color.GREEN)
 
         // 设置画布背景颜色
         canvas?.drawRGB(255, 255, 255)
 
         // 画圆
-//        canvas?.drawCircle(190f,200f,150f,paint)
+//        canvas?.drawCircle(190f,200f,150f,mPaint)
 
         // 画直线
-//        canvas?.drawLine(100f, 100f, 200f, 200f, paint)
+//        canvas?.drawLine(100f, 100f, 200f, 200f, mPaint)
 
         // 画多条直线，
         // pts:是点的集合，大家下面可以看到，这里不是形成连接线，而是每两个点形成一条直线，pts的组织方式为｛x1,y1,x2,y2,x3,y3,……｝
 //        val pts = floatArrayOf(10f, 10f, 100f, 100f, 200f, 200f, 400f, 400f)
-//        canvas?.drawLines(pts, paint)
+//        canvas?.drawLines(pts, mPaint)
 
         // 画点
-//        canvas?.drawPoint(100f, 100f, paint)
+//        canvas?.drawPoint(100f, 100f, mPaint)
 
         // 画多个点
         // float[] pts:点的合集，与上面直线一直，样式为｛x1,y1,x2,y2,x3,y3,……｝
@@ -54,17 +54,17 @@ class MyView : View {
         //
         //下面举例说明上面offset与count的含义：（跳过第一个点，画出后面两个点，第四个点不画），注意一个点是两个数值！
 //        val pts = floatArrayOf(10f, 10f, 100f, 100f, 200f, 200f, 400f, 400f)
-//        canvas?.drawPoints(pts, 2, 4, paint)
+//        canvas?.drawPoints(pts, 2, 4, mPaint)
 
         // 画矩形
         // 直接构造
-//        canvas?.drawRect(10f, 10f, 100f, 100f, paint)
+//        canvas?.drawRect(10f, 10f, 100f, 100f, mPaint)
 //        // 使用 RectF构造
 //        val rectF = RectF(120f, 10f, 210f, 100f)
-//        canvas?.drawRect(rectF, paint)
+//        canvas?.drawRect(rectF, mPaint)
 //        // 使用 Rect构造
 //        val rect = Rect(230, 10, 320, 100)
-//        canvas?.drawRect(rect, paint)
+//        canvas?.drawRect(rect, mPaint)
 
         // 画圆角矩形
 //        val rectF = RectF(100f, 10f, 300f, 100f)
@@ -72,23 +72,23 @@ class MyView : View {
         //RectF rect:要画的矩形
         //float rx:生成圆角的椭圆的X轴半径
         //float ry:生成圆角的椭圆的Y轴半径
-//        canvas?.drawRoundRect(rectF, 20f, 20f, paint)
+//        canvas?.drawRoundRect(rectF, 20f, 20f, mPaint)
 
         // 画圆
-//        canvas?.drawCircle(150f, 150f, 100f, paint)
+//        canvas?.drawCircle(150f, 150f, 100f, mPaint)
 
 //        // 画椭圆，椭圆是根据矩形生成的，以矩形的长为椭圆的X轴，矩形的宽为椭圆的Y轴，建立的椭圆图形
 //        val rectF = RectF(100f, 10f, 300f, 100f)
 //        // 画矩形
-//        canvas?.drawRect(rectF, paint)
+//        canvas?.drawRect(rectF, mPaint)
 //        // 画椭圆
-//        paint.color = Color.GREEN
-//        canvas?.drawOval(rectF, paint)
+//        mPaint.color = Color.GREEN
+//        canvas?.drawOval(rectF, mPaint)
 
 //        // 画弧线
 //        // 弧是椭圆的一部分，而椭圆是根据矩形来生成的，所以弧当然也是根据矩形来生成的；
 //        //
-//        //void drawArc (RectF oval, float startAngle, float sweepAngle, boolean useCenter, Paint paint)
+//        //void drawArc (RectF oval, float startAngle, float sweepAngle, boolean useCenter, Paint mPaint)
 //        //
 //        //参数：
 //        //RectF oval:生成椭圆的矩形
@@ -96,23 +96,23 @@ class MyView : View {
 //        //float sweepAngle：弧持续的角度
 //        //boolean useCenter:是否有弧的两边，True，还两边，False，只有一条弧
 //        val rectF1 = RectF(100f, 10f, 300f, 100f)
-//        canvas?.drawArc(rectF1, 0f, 90f, true, paint)
+//        canvas?.drawArc(rectF1, 0f, 90f, true, mPaint)
 //        val rectF2 = RectF(400f, 10f, 600f, 100f)
-//        canvas?.drawArc(rectF2, 0f, 90f, false, paint)
+//        canvas?.drawArc(rectF2, 0f, 90f, false, mPaint)
 
 //        // 直线路径
 //        //void moveTo (float x1, float y1):直线的开始点；即将直线路径的绘制点定在（x1,y1）的位置；
 //        //void lineTo (float x2, float y2)：直线的结束点，又是下一次绘制直线路径的开始点；lineTo（）可以一直用；
 //        //void close ():如果连续画了几条直线，但没有形成闭环，调用Close()会将路径首尾点连接起来，形成闭环；
-//        val path = Path()
+//        val mPath = Path()
 //        // 设定起点
-//        path.moveTo(10f, 10f)
-//        path.lineTo(10f, 100f)
-//        path.lineTo(300f, 100f)
-//        path.lineTo(500f, 100f)
+//        mPath.moveTo(10f, 10f)
+//        mPath.lineTo(10f, 100f)
+//        mPath.lineTo(300f, 100f)
+//        mPath.lineTo(500f, 100f)
 //        // 闭环
-//        path.close()
-//        canvas?.drawPath(path, paint)
+//        mPath.close()
+//        canvas?.drawPath(mPath, mPaint)
 
 //        // 矩形路径
 //        //void addRect (float left, float top, float right, float bottom, Path.Direction dir)
@@ -131,17 +131,17 @@ class MyView : View {
 //        val rectF2 = RectF(290f, 50f, 480f, 200f)
 //        CWPath.addRect(rectF2, Path.Direction.CW)
 //        // 画出两个路径
-//        canvas?.drawPath(CCWRectPath, paint)
-//        canvas?.drawPath(CWPath, paint)
+//        canvas?.drawPath(CCWRectPath, mPaint)
+//        canvas?.drawPath(CWPath, mPaint)
 //
 //        // 依据路径写文字
 //        val text = "no pain no gain"
-//        paint.color = Color.BLUE
-//        paint.textSize = 20f
+//        mPaint.color = Color.BLUE
+//        mPaint.textSize = 20f
 //        // 逆时针生成文字
-//        canvas?.drawTextOnPath(text, CCWRectPath, 0f, 18f, paint)
+//        canvas?.drawTextOnPath(text, CCWRectPath, 0f, 18f, mPaint)
 //        // 顺时针生成文字
-//        canvas?.drawTextOnPath(text, CWPath, 0f, 18f, paint)
+//        canvas?.drawTextOnPath(text, CWPath, 0f, 18f, mPaint)
 
 //        // 圆角矩形路径
 //        //void addRoundRect (RectF rect, float[] radii, Path.Direction dir)
@@ -153,15 +153,15 @@ class MyView : View {
 //        //第二个构造函数：只能构建统一圆角大小
 //        //float rx：所产生圆角的椭圆的横轴半径；
 //        //float ry：所产生圆角的椭圆的纵轴半径；
-//        val path = Path()
+//        val mPath = Path()
 //        val rectF1 = RectF(50f, 50f, 240f, 200f)
-//        path.addRoundRect(rectF1, 10f, 15f, Path.Direction.CCW)
+//        mPath.addRoundRect(rectF1, 10f, 15f, Path.Direction.CCW)
 //
 //        val rectF2 = RectF(290f, 50f, 480f, 200f)
 //        val radii = floatArrayOf(10f, 15f, 20f, 25f, 30f, 35f, 40f, 45f)
-//        path.addRoundRect(rectF2, radii, Path.Direction.CCW)
+//        mPath.addRoundRect(rectF2, radii, Path.Direction.CCW)
 //
-//        canvas?.drawPath(path, paint)
+//        canvas?.drawPath(mPath, mPaint)
 
 //        // 圆形路径
 //        //void addCircle (float x, float y, float radius, Path.Direction dir)
@@ -170,9 +170,9 @@ class MyView : View {
 //        //float x：圆心X轴坐标
 //        //float y：圆心Y轴坐标
 //        //float radius：圆半径
-//        val path = Path()
-//        path.addCircle(200f, 200f, 100f, Path.Direction.CCW)
-//        canvas?.drawPath(path, paint)
+//        val mPath = Path()
+//        mPath.addCircle(200f, 200f, 100f, Path.Direction.CCW)
+//        canvas?.drawPath(mPath, mPaint)
 
 //        // 椭圆路径
 //        //void addOval (RectF oval, Path.Direction dir)
@@ -180,10 +180,10 @@ class MyView : View {
 //        //参数说明：
 //        //RectF oval：生成椭圆所对应的矩形
 //        //Path.Direction :生成方式，与矩形一样，分为顺时针与逆时针，意义完全相同，不再重复
-//        val path = Path()
+//        val mPath = Path()
 //        val rectF = RectF(50f, 50f, 240f, 200f)
-//        path.addOval(rectF, Path.Direction.CCW)
-//        canvas?.drawPath(path, paint)
+//        mPath.addOval(rectF, Path.Direction.CCW)
+//        canvas?.drawPath(mPath, mPaint)
 
 //        // 弧形路径
 //        //void addArc (RectF oval, float startAngle, float sweepAngle)
@@ -192,10 +192,10 @@ class MyView : View {
 //        //RectF oval：弧是椭圆的一部分，这个参数就是生成椭圆所对应的矩形；
 //        //float startAngle：开始的角度，X轴正方向为0度
 //        //float sweepAngel：持续的度数；
-//        val path = Path()
+//        val mPath = Path()
 //        val rectF = RectF(50f, 50f, 240f, 200f)
-//        path.addArc(rectF, 0f, 100f)
-//        canvas?.drawPath(path, paint)
+//        mPath.addArc(rectF, 0f, 100f)
+//        canvas?.drawPath(mPath, mPaint)
 
         val text = "Hello Custom View"
         // 文字
@@ -211,51 +211,51 @@ class MyView : View {
         paint.style = Paint.Style.FILL
 
 //        // 示例1：绘图样式的区别：
-//        canvas?.drawText("Hello Custom View",10f,100f,paint)
+//        canvas?.drawText("Hello Custom View",10f,100f,mPaint)
 //        // 绘图样式设置为描边
-//        paint.style = Paint.Style.STROKE
-//        canvas?.drawText("Hello Custom View",10f,200f,paint)
+//        mPaint.style = Paint.Style.STROKE
+//        canvas?.drawText("Hello Custom View",10f,200f,mPaint)
 //        // 绘图样式设置填充且描边
-//        paint.style = Paint.Style.FILL_AND_STROKE
-//        canvas?.drawText("Hello Custom View",10f,300f,paint)
+//        mPaint.style = Paint.Style.FILL_AND_STROKE
+//        canvas?.drawText("Hello Custom View",10f,300f,mPaint)
 
 //        // 示例二：文字样式设置及倾斜度正负区别
 //        // 样式设置
 //        // 加粗
-//        paint.isFakeBoldText = true
+//        mPaint.isFakeBoldText = true
 //        // 下划线
-//        paint.isUnderlineText = true
+//        mPaint.isUnderlineText = true
 //        // 删除线
-//        paint.isStrikeThruText = true;
+//        mPaint.isStrikeThruText = true;
 //
 //        // 设置字体水平倾斜度，普通斜体字是 -0.25，可见往右斜
-//        paint.textSkewX = -0.25f
-//        canvas?.drawText("示例二：文字样式设置及倾斜度正负区别", 10f, 100f, paint)
+//        mPaint.textSkewX = -0.25f
+//        canvas?.drawText("示例二：文字样式设置及倾斜度正负区别", 10f, 100f, mPaint)
 //
 //        // 水平倾斜度设置为 0.25f，往左斜
-//        paint.textSkewX = 0.25f
-//        canvas?.drawText("示例二：文字样式设置及倾斜度正负区别", 10f, 200f, paint)
+//        mPaint.textSkewX = 0.25f
+//        canvas?.drawText("示例二：文字样式设置及倾斜度正负区别", 10f, 200f, mPaint)
 
-//        // 示例三：水平拉伸设置（ paint.setTextScaleX(2);）
+//        // 示例三：水平拉伸设置（ mPaint.setTextScaleX(2);）
 //        // 普通样式字体
-//        canvas?.drawText(text, 10f, 100f, paint)
+//        canvas?.drawText(text, 10f, 100f, mPaint)
 //        // 水平方向拉伸两倍
-//        paint.textScaleX = 2f
-//        canvas?.drawText(text, 10f, 200f, paint)
+//        mPaint.textScaleX = 2f
+//        canvas?.drawText(text, 10f, 200f, mPaint)
 //
 //        //写在同一位置,不同颜色,看下高度是否看的不变
 //        // 还原拉伸效果
-//        paint.textScaleX = 1f
-//        canvas?.drawText(text, 10f, 300f, paint)
+//        mPaint.textScaleX = 1f
+//        canvas?.drawText(text, 10f, 300f, mPaint)
 //
-//        paint.color = Color.GREEN
+//        mPaint.color = Color.GREEN
 //        // 重新设置为拉伸效果
-//        paint.textScaleX = 2f
-//        canvas?.drawText(text, 10f, 300f, paint)
+//        mPaint.textScaleX = 2f
+//        canvas?.drawText(text, 10f, 300f, mPaint)
 
 //        // 指定文字位置
-//        // void drawPosText (char[] text, int index, int count, float[] pos, Paint paint)
-//        //void drawPosText (String text, float[] pos, Paint paint)
+//        // void drawPosText (char[] text, int index, int count, float[] pos, Paint mPaint)
+//        //void drawPosText (String text, float[] pos, Paint mPaint)
 //        //
 //        //说明：
 //        //第一个构造函数：实现截取一部分文字绘制；
@@ -271,11 +271,11 @@ class MyView : View {
 //                80f,300f,
 //                80f,400f
 //                )
-//        canvas?.drawPosText("画图示例",pos,paint)
+//        canvas?.drawPosText("画图示例",pos,mPaint)
 
 //        // 沿路径绘制
-//        // void drawTextOnPath (String text, Path path, float hOffset, float vOffset, Paint paint)
-//        //void drawTextOnPath (char[] text, int index, int count, Path path, float hOffset, float vOffset, Paint paint)
+//        // void drawTextOnPath (String text, Path mPath, float hOffset, float vOffset, Paint mPaint)
+//        //void drawTextOnPath (char[] text, int index, int count, Path mPath, float hOffset, float vOffset, Paint mPaint)
 //        //
 //        //参数说明：
 //        //
@@ -289,18 +289,18 @@ class MyView : View {
 //        val circlePath = Path()
 //        // 逆向绘制
 //        circlePath.addCircle(220f, 200f, 100f, Path.Direction.CCW)
-//        canvas?.drawPath(circlePath, paint)
+//        canvas?.drawPath(circlePath, mPaint)
 //
 //        val circlePath2 = Path()
 //        circlePath2.addCircle(750f, 200f, 100f, Path.Direction.CCW)
-//        canvas?.drawPath(circlePath2, paint)
+//        canvas?.drawPath(circlePath2, mPaint)
 //
-//        paint.style = Paint.Style.FILL
-//        paint.color = Color.GREEN
+//        mPaint.style = Paint.Style.FILL
+//        mPaint.color = Color.GREEN
 //        //hoffset、voffset参数值全部设为0，看原始状态是怎样的
-//        canvas?.drawTextOnPath(string, circlePath, 0f, 0f, paint)
+//        canvas?.drawTextOnPath(string, circlePath, 0f, 0f, mPaint)
 //        //第二个路径，改变hoffset、voffset参数值
-//        canvas?.drawTextOnPath(string, circlePath2, 80f, 30f, paint)
+//        canvas?.drawTextOnPath(string, circlePath2, 80f, 30f, mPaint)
 
         // 字体样式设置（Typeface）
         // 使用系统中的字体
