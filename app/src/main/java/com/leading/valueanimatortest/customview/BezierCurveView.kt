@@ -6,7 +6,6 @@ import android.graphics.Color
 import android.graphics.Paint
 import android.graphics.Path
 import android.util.AttributeSet
-import android.view.MotionEvent
 import android.view.View
 
 /**
@@ -28,10 +27,13 @@ class BezierCurveView : View {
      */
     private val mPath = Path()
     private val mPaint = Paint()
+    private var mPrex = 0f
+    private var mPrey = 0f
 
     private fun myInit() {
         mPaint.style = Paint.Style.STROKE
         mPaint.color = Color.GREEN
+        mPaint.strokeWidth = 2f
 //        mPaint.isAntiAlias = true
     }
 
@@ -64,8 +66,19 @@ class BezierCurveView : View {
 //        mPath.quadTo(200f, 200f, 300f, 300f)
 //        mPath.quadTo(400f, 400f, 500f, 300f)
 //
+
+        // 使用rQuadTo实现波浪线
+        // 等价于 path.moveTo(100,300);
+        //        path.quadTo(200,200,300,300);
+        //        path.quadTo(400,400,500,300);
+        // rQuadTo(float dx1, float dy1, float dx2, float dy2)中的位移坐标，都是以上一个终点位置为基准来做偏移的
+//        mPath.moveTo(100f, 300f)
+//        mPath.rQuadTo(100f, -100f, 200f, 0f)
+//        mPath.rQuadTo(100f, 100f, 200f, 0f)
         canvas.drawPath(mPath, mPaint)
     }
+
+    private val mItemWaveLength = 0f;
 
     /**
      * 第一：有关在case MotionEvent.ACTION_DOWN时return true的问题：return true表示当前控件已经消费了下按动作，
@@ -81,21 +94,32 @@ class BezierCurveView : View {
      * 当我们不确定当前要刷新页面的位置所处的线程是不是主线程的时候，还是用postInvalidate为好；
      * 这里我是故意用的postInvalidate()，因为onTouchEvent()本来就是在主线程中的，使用Invalidate()是更合适的。
      */
-    override fun onTouchEvent(event: MotionEvent): Boolean {
-        when (event.action) {
-            MotionEvent.ACTION_DOWN -> {
-                // 设置起点
-                mPath.moveTo(event.x, event.y)
-                return true
-            }
-            MotionEvent.ACTION_MOVE -> {
-                // 连接触摸点
-                mPath.lineTo(event.x, event.y)
-                postInvalidate()
-            }
-        }
-        return super.onTouchEvent(event)
-    }
+//    override fun onTouchEvent(event: MotionEvent): Boolean {
+//        when (event.action) {
+//            MotionEvent.ACTION_DOWN -> {
+//                // 设置起点
+////                mPath.moveTo(event.x, event.y)
+//
+////                在ACTION_DOWN的时候，利用 mPath.moveTo(event.getX(),event.getY())将Path的初始位置设置到手指的触点处，如果不调用mPath.moveTo的话，会默认是从(0,0)开始的。然后我们定义两个变量mPreX，mPreY来表示手指的前一个点。我们通过上面的分析知道，这个点是用来做控制点的。最后return true让ACTION_MOVE,ACTION_UP事件继续向这个控件传递。
+//                mPath.moveTo(event.x, event.y)
+//                mPrex = event.x
+//                mPrey = event.y
+//                return true
+//            }
+//            MotionEvent.ACTION_MOVE -> {
+//                // 连接触摸点
+////                mPath.lineTo(event.x, event.y)
+////                postInvalidate()
+//                var endX = (mPrex + event.x) / 2
+//                var endY = (mPrey + event.y) / 2
+//                mPath.quadTo(mPrex, mPrey, endX, endY)
+//                mPrex = event.x
+//                mPrey = event.y
+//                invalidate()
+//            }
+//        }
+//        return super.onTouchEvent(event)
+//    }
 
     fun reset() {
         mPath.reset()

@@ -7,14 +7,23 @@
     tools:context=".ui.PaintAndCanvasTest"
     tools:ignore="MissingDefaultResource">
 
-    <Button
-        android:id="@+id/btnReset"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="reset" />
+    <!--<Button-->
+    <!--android:id="@+id/btnReset"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="reset" />-->
 
-    <com.leading.valueanimatortest.customview.BezierCurveView
-        android:id="@+id/bezierView"
+    <!--<com.leading.valueanimatortest.customview.BezierCurveView-->
+    <!--android:id="@+id/bezierView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+    <!--<com.leading.valueanimatortest.customview.WaveView-->
+    <!--android:id="@+id/wave_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <com.leading.valueanimatortest.customview.PaintFunctionsTestView
+        android:id="@+id/dass_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

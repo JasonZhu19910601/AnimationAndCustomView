@@ -3,8 +3,6 @@ package com.leading.valueanimatortest.ui
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.leading.valueanimatortest.R
-import com.leading.valueanimatortest.customview.BezierCurveView
-import kotlinx.android.synthetic.main.activity_paint_and_canvas_test.*
 
 class PaintAndCanvasTest : AppCompatActivity() {
 
@@ -16,9 +14,16 @@ class PaintAndCanvasTest : AppCompatActivity() {
 //        root.addView(MyRegionView(this))
 //        root.addView(CanvasChangeAndOperationView(this))
 //        root.addView(MyDrawTextView(this))
-        root.addView(BezierCurveView(this))
-        btnReset.setOnClickListener {
-            bezierView.reset()
-        }
+//        root.addView(BezierCurveView(this))
+//        btnReset.setOnClickListener {
+//            bezierView.reset()
+//        }
+//        val myWaveView = MyWaveView(this);
+//        root.addView(myWaveView)
+//        myWaveView.startAnim()
+//        wave_view.startAnim(wave_view.height)
+
+        // 绘制虚线
+//        dass_view.startDashTranslationAnim()
     }
 }
