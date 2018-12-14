@@ -23,6 +23,10 @@ import android.view.animation.LinearInterpolator
 class PaintFunctionsTestView : View {
     private var mPaint: Paint = Paint()
     private var mPath: Path = Path()
+    /**
+     * 虚线的横向偏移量
+     */
+    private var dashDx: Float = 0f
 
     init {
         mPaint.strokeWidth = 4f
@@ -206,19 +210,62 @@ class PaintFunctionsTestView : View {
 //        canvas?.drawPath(randomPath, mPaint)
 
 
-        /**
-         * ComposePathEffect与SumPathEffect
-         * 这两个都是用来合并两个特效的。但它们之间是有区别的：
-         * public ComposePathEffect(PathEffect outerpe, PathEffect innerpe)
-         * ComposePathEffect合并两个特效是有先后顺序的，它会先将第二个参数的PathEffect innerpe的特效作用于路径上，
-         * 然后再在此加了特效的路径上作用第二个特效。
-         * public SumPathEffect(PathEffect first, PathEffect second)
-         * 而SumPathEffect是分别对原始路径分别作用第一个特效和第二个特效。然后再将这两条路径合并，做为最终结果。
-         */
+//        /**
+//         * ComposePathEffect与SumPathEffect
+//         * 这两个都是用来合并两个特效的。但它们之间是有区别的：
+//         * public ComposePathEffect(PathEffect outerpe, PathEffect innerpe)
+//         * ComposePathEffect合并两个特效是有先后顺序的，它会先将第二个参数的PathEffect innerpe的特效作用于路径上，
+//         * 然后再在此加了特效的路径上作用第二个特效。
+//         * public SumPathEffect(PathEffect first, PathEffect second)
+//         * 而SumPathEffect是分别对原始路径分别作用第一个特效和第二个特效。然后再将这两条路径合并，做为最终结果。
+//         */
+//        // 画原始路径
+//        val randomPath = getRandomPath()
+//        canvas?.drawPath(randomPath, mPaint)
+//
+//        // 仅应用圆角特效的路径
+//        canvas?.translate(0f, 200f)
+//        val cornerPathEffect = CornerPathEffect(100f)
+//        mPaint.pathEffect = cornerPathEffect
+//        canvas?.drawPath(randomPath, mPaint)
+//
+//        // 仅应用虚线特效的路径
+//        canvas?.translate(0f, 200f)
+//        val dashPathEffect = DashPathEffect(floatArrayOf(2f, 5f, 10f, 10f), 0f)
+//        mPaint.pathEffect = dashPathEffect
+//        canvas?.drawPath(randomPath, mPaint)
+//
+//        //利用ComposePathEffect先应用圆角特效,再应用虚线特效
+//        canvas?.translate(0f, 200f)
+//        val composePathEffect = ComposePathEffect(dashPathEffect, cornerPathEffect)
+//        mPaint.pathEffect = composePathEffect
+//        canvas?.drawPath(randomPath, mPaint)
+//
+//        //利用SumPathEffect,分别将圆角特效应用于原始路径,然后将生成的两条特效路径合并
+//        canvas?.translate(0f, 200f)
+//        val sumPathEffect = SumPathEffect(dashPathEffect, cornerPathEffect)
+//        mPaint.pathEffect = sumPathEffect
+//        canvas?.drawPath(randomPath, mPaint)
 
+
+        // setSubpixelText(boolean subpixelText)
+        //表示是否打开亚像素设置来绘制文本。亚像素的概念比较难理解，首先，我们都知道像素，
+        // 比如一个android手机的分辨率是1280*720，那就是指它的屏幕在垂直方向有1280个像素点，水平方向上有720个像素点。
+        // 我们知道每个像素点都是一个独立显示一个颜色的个体。所以如果一副图片，在一个屏幕上用了300*100个相素点，而在另一个屏幕上却用了450*150个像素来显示。那么，请问在哪个屏幕上这张图片显示的更清晰？当然是第二个屏幕，因为它使用的像素点更多，所显示的细节更精细。
+        //那么问题来了，android设置在出厂时，设定的像素显示都是固定的几个范围：320*480，480*800，720*1280，1080*1920等等；那么如何在同样的分辨率的显示器中增强显示清晰度呢？
+        //亚像素的概念就油然而生了，亚像素就是把两个相邻的两个像素之间的距离再细分，再插入一些像素，这些通过程序加入的像素就是亚像素。在两个像素间插入的像素个数是通过程序计算出来的，一般是插入两个、三个或四个。
+        //所以打开亚像素显示，是可以在增强文本显示清晰度的，但由于插入亚像素是通过程序计算而来的，所以会耗费一定的计算机性能。注意：亚像素是通过程序计算出来模拟插入的，在没有改变硬件构造的情况下，来改善屏幕分辨率大小。
+        //亚像素显示，是仅在液晶显示器上使用的一种增强字体清晰度的技术。但这种技术有时会出现问题，用投影仪投射到白色墙壁上，会出出字体显示不正常的情况，而且对于老式的CRT显示器是根本不支持的。
+        mPaint.style = Paint.Style.FILL
+        val text = "test subpixel"
+        mPaint.textSize = 100f
+        mPaint.isSubpixelText = false;
+        canvas?.drawText(text, 0f, 200f, mPaint)
+
+        canvas?.translate(0f, 300f)
+        mPaint.isSubpixelText = true;
+        canvas?.drawText(text, 0f, 200f, mPaint)
     }
-
-    private var dashDx: Float = 0f
 
     /**
      * 使用ValueAnimator,动画长度值设为一个虚线的一个基线的长度，这里的基线是由20，10，100，100组成的，

@@ -1256,6 +1256,10 @@
         "source": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\src\\main\\res\\anim\\grid_animation.xml"
     },
     {
+        "merged": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sample.png.flat",
+        "source": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\src\\main\\res\\drawable\\sample.png"
+    },
+    {
         "merged": "D:\\AS_TestProject\\AnimationAndCustomView\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_arrow_drop_right_black_24dp.xml.flat",
         "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.2.aar\\74944f8af1d56c6c9991cd40cff6cf56\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
     },
