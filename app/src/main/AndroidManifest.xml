@@ -24,14 +24,23 @@
         <activity android:name=".ui.GridLayoutAnimationActivity" />
         <activity android:name=".ui.AnimateLayoutChangesAndLayoutTransitionActivity" />
         <activity android:name=".ui.ListViewItemAnimationActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- ` -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".ui.PaintAndCanvasTest">
             <!--<intent-filter>-->
             <!--<action android:name="android.intent.action.MAIN" />-->
 
             <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--`-->
             <!--</intent-filter>-->
         </activity>
-        <activity android:name=".ui.PaintAndCanvasTest">
+        <activity android:name=".ui.ColorMatrixActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

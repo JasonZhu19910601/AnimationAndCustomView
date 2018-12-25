@@ -88,13 +88,51 @@ class PaintColorMatrixAndFilterEffects(context: Context, attrs: AttributeSet) : 
 //                0f, 0f, 0f, 1f, 0f
 //        ))
 
-        // 蓝色通道矩阵
-        val colorMatrix = ColorMatrix(floatArrayOf(
-                0f, 0f, 0f, 0f, 0f,
-                0f, 0f, 0f, 0f, 0f,
-                0f, 0f, 1f, 0f, 0f,
-                0f, 0f, 0f, 1f, 0f
-        ))
+//        // 蓝色通道矩阵
+//        val colorMatrix = ColorMatrix(floatArrayOf(
+//                0f, 0f, 0f, 0f, 0f,
+//                0f, 0f, 0f, 0f, 0f,
+//                0f, 0f, 1f, 0f, 0f,
+//                0f, 0f, 0f, 1f, 0f
+//        ))
+
+        // 当围绕红色轴进行色彩旋转时，由于当前红色轴的色彩是不变的，而仅利用三角函数来动态的变更绿色和蓝色的颜色值。
+        // 这种改变就叫做色相调节！当围绕红色轴旋转时，是对图片就行红色色相的调节；
+        // 同理，当围绕蓝色颜色轴旋转时，就是对图片就行蓝色色相调节；当然，当围绕绿色轴旋转时，就是对图片进行绿色色相的调节.
+//        // 色彩投射的一个最简单应用就是变为黑白图片：
+//        val colorMatrix = ColorMatrix(floatArrayOf(
+//                0.213f, 0.715f, 0.072f, 0f, 0f,
+//                0.213f, 0.715f, 0.072f, 0f, 0f,
+//                0.213f, 0.715f, 0.072f, 0f, 0f,
+//                0f, 0f, 0f, 1f, 0f
+//        ))
+
+//        // 投射运算的另一个应用是：色彩反色
+//        //当我们利用色彩矩阵将两个颜色反转，这种操作就叫做色彩反色
+//        //比如，下面的的将红色和绿色反色（红绿反色）
+//        val colorMatrix = floatArrayOf(
+//                0f,1f,0f,0f,0f,
+//                1f,0f,0f,0f,0f,
+//                0f,0f,1f,0f,0f,
+//                0f,0f,0f,1f,0f
+//        )
+
+//        // 变旧照片
+//        //投射运算的另一个应用是照片变旧，对应矩阵如下：
+//        val colorMatrix = floatArrayOf(
+//                1 / 2f, 1 / 2f, 1 / 2f, 0f, 0f,
+//                1 / 3f, 1 / 3f, 1 / 3f, 0f, 0f,
+//                1 / 4f, 1 / 4f, 1 / 4f, 0f, 0f,
+//                0f, 0f, 0f, 1f, 0f
+//        )
+
+//        setScale——色彩缩放
+//        同样，对于色彩的缩放运算ColorMatrics也已经为我们封装了一个函数：
+//        public void setScale(float rScale, float gScale, float bScale,float aScale)
+//        总共有四个参数，分别对应R,G,B,A颜色值的缩放倍数。
+        // 生成色彩矩阵
+        val colorMatrix = ColorMatrix()
+        colorMatrix.setScale(1f, 1.3f, 1f, 1f)
         mPaint.colorFilter = ColorMatrixColorFilter(colorMatrix)
         canvas.drawBitmap(bitmap, null, Rect(0, 0, 500, 500 * bitmap.height / bitmap.width), mPaint)
     }
