@@ -25,5 +25,6 @@ class PaintAndCanvasTest : AppCompatActivity() {
 
         // 绘制虚线
 //        dass_view.startDashTranslationAnim()
+
     }
 }

@@ -1002,6 +1002,8 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable blue_circle
+drawable broom
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1110,7 +1112,6 @@ id fill_horizontal
 id fill_vertical
 id filled
 id fixed
-id floatingActionButton
 id forever
 id ghost_view
 id gone
