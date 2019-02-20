@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.PaintAndCanvasTest"
-    tools:ignore="MissingDefaultResource">
+    tools:context=".ui.PaintAndCanvasTest">
 
     <!--<Button-->
     <!--android:id="@+id/btnReset"-->
@@ -31,8 +30,22 @@
     <!--android:layout_width="match_parent"-->
     <!--android:layout_height="match_parent" />-->
 
-    <com.leading.valueanimatortest.customview.PaintSetColorFilterView
+    <!--<com.leading.valueanimatortest.customview.PaintSetColorFilterView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <!--<com.leading.valueanimatortest.customview.HeartMap-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+    <!--<com.leading.valueanimatortest.customview.IrregularWaveView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <!--<com.leading.valueanimatortest.customview.BitmapCanvasView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+
+    <com.leading.valueanimatortest.customview.RedPointView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
 </LinearLayout>

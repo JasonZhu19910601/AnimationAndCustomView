@@ -1004,12 +1004,14 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable blue_circle
 drawable broom
+drawable circle_shape
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable heartmap
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
@@ -1033,6 +1035,7 @@ drawable notify_panel_notification_icon_bg
 drawable sample
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable wave_bg
 id ALT
 id CTRL
 id FUNCTION
