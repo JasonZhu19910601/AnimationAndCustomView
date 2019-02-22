@@ -1017,6 +1017,12 @@ drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable idp
+drawable idq
+drawable idr
+drawable ids
+drawable idt
+drawable layer_list_shape_bg
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1033,8 +1039,10 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable sample
+drawable tip_anim
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable tv_bg
 drawable wave_bg
 id ALT
 id CTRL
@@ -1077,6 +1085,7 @@ id btn
 id btn_cancel
 id btn_cancel_anim
 id btn_start_anim
+id button
 id buttonPanel
 id center
 id center_horizontal
