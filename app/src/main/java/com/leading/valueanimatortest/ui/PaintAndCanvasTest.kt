@@ -3,6 +3,7 @@ package com.leading.valueanimatortest.ui
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.leading.valueanimatortest.R
+import kotlinx.android.synthetic.main.activity_paint_and_canvas_test.*
 
 class PaintAndCanvasTest : AppCompatActivity() {
 
@@ -25,6 +26,14 @@ class PaintAndCanvasTest : AppCompatActivity() {
 
         // 绘制虚线
 //        dass_view.startDashTranslationAnim()
+
+//        // 给控件添加阴影效果
+//        btnRadius.setOnClickListener { shadowView.changeShadowRadius() }
+//        btnDx.setOnClickListener { shadowView.changeDx() }
+//        btnDy.setOnClickListener { shadowView.changeDy() }
+//        btnClearShadow.setOnClickListener { shadowView.clearShadow() }
+//        btnShowShadow.setOnClickListener { shadowView.showShadow() }
+
 
     }
 }
